@@ -116,10 +116,24 @@ void suspend_wakeup_init_kb(void)
 }
 
 __attribute__ ((weak))
+uint8_t normal_mode = 0;
+
 void rgb_matrix_indicators_user(void)
 {
     if (IS_LED_ON(host_keyboard_leds(), USB_LED_CAPS_LOCK))
     {
-        rgb_matrix_set_color(8, 0xFF, 0xFF, 0xFF);
+        if (normal_mode == 0)
+        {
+            normal_mode = rgb_matrix_get_mode();
+            rgb_matrix_mode_noeeprom(RGB_MATRIX_BREATHING);
+        }
+    }
+    else
+    {
+        if (normal_mode != 0)
+        {
+            rgb_matrix_mode_noeeprom(normal_mode);
+            normal_mode = 0;
+        }
     }
 }
