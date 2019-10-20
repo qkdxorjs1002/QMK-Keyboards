@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0003
 #define MANUFACTURER    TADA
 #define PRODUCT         TADA68
-#define DESCRIPTION     QMK keyboard firmware for TADA68 with WS2812 support
+#define DESCRIPTION     "QMK keyboard firmware for TADA68 with WS2812 support"
 
 /* key matrix size */
 #define MATRIX_ROWS 5
