@@ -12,6 +12,4 @@ BACKLIGHT_ENABLE = no				# Use Backlight
 RGB_MATRIX_ENABLE = yes				# Use RGB matrix
 SLEEP_LED_ENABLE = no       		# Breathing sleep LED during USB suspend
 
-VELOCIKEY_ENABLE = yes
-
 LINK_TIME_OPTIMIZATION_ENABLE = yes
