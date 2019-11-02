@@ -12,6 +12,7 @@
 #define MATRIX_ROW_PINS { B1, B10, B11, B14, B12 }
 #define MATRIX_COL_PINS { A6, A7, B0, B13, B15, A8, A15, B3, B4, B5, B8, B9, C13, C14, C15 }
 #define DIODE_DIRECTION COL2ROW
+#define USB_POLLING_INTERVAL_MS 1
 
 #define RGB_MATRIX_LED_PROCESS_LIMIT 4          // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
 #define RGB_MATRIX_LED_FLUSH_LIMIT 25           // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
